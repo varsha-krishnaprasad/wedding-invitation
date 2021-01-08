@@ -12,7 +12,7 @@
     <link href="static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700|Lato:400,700&amp;display=swap"
         rel="stylesheet">
-    <meta property="og:image" content=static/card/card.jpg" />
+    <meta property="og:image" content="static/card/card.jpg" />
     <meta property="og:image:width" content="360" />
     <meta property="og:image:height" content="520" />
     <meta property="og:type" content="other" />
@@ -87,6 +87,7 @@
     <script src="static/js/lib.js"></script>
     <script src="static/js/gid.js"></script>
     <script type="text/javascript">
+    
 
         function printImage() {
             $('<div class=\'print-wrap\'>')
@@ -97,6 +98,23 @@
         function initPickupPage() {
 
             var content = $('.main-content');
+            var audio = document.createElement("AUDIO")
+            document.body.appendChild(audio);
+            audio.src = "static/audio/bg.m4a"
+            audio.loop = "loop"
+            audio.autoplay="autoplay"
+            document.body.addEventListener("mousemove", function () {
+                audio.play()
+            })
+            document.body.addEventListener("mouseenter", function () {
+                audio.play()
+            })
+            document.body.addEventListener("touchstart", function () {
+                audio.play()
+            })
+            document.body.addEventListener("touchmove", function () {
+                audio.play()
+            })
 
             var image = sessionStorage["image" + 'swrapfy3z1zb'] || 'static/card/card.jpg';
 
