@@ -55,12 +55,7 @@
 
 
 
-
-  body {
-    background:#000;
-  }
-  
-  #load {
+    #load {
     position:absolute;
     width:600px;
     height:36px;
