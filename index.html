@@ -12,6 +12,7 @@
     <link href="static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700|Lato:400,700&amp;display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta property="og:image" content="static/card/card.jpg" />
     <meta property="og:image:width" content="360" />
     <meta property="og:image:height" content="520" />
@@ -22,10 +23,14 @@
 
 <body class="pickup ">
     <!-- <div class="bg_heart"></div> -->
+    
     <div class="site  en">
         <link href="static/css/invitation.css"
             rel="stylesheet" />
         <main class="main-content bg_heart">
+            <a href="https://goo.gl/maps/6qmrHDTd2bs7eD3C7" class="float" target="blank">
+                <i class="fa fa-map-marker my-float"></i>
+            </a>
             <div class="pickup-holder invitation_portrait">
                 <div class="wrap -size-md">
                     <div class="_align-center">
@@ -45,14 +50,14 @@
                 </div>
             </div>
 
-            <div class="rsvp-fixed _3dhide">
+            <!-- <div class="rsvp-fixed _3dhide">
                 <div class="container">
                     <div class="rsvp-button-wrap">
                         <a href='https://goo.gl/maps/6qmrHDTd2bs7eD3C7' id="rsvp-button-fixed" target="blank"
                             class="button -primary -size-sm-md -wider _uppercase">MAP</a>
                     </div>
                     
-                    <!-- <div class="more-box">
+                    <div class="more-box">
                         <a href="#" class="btn-more"><i class="more"></i></a>
                         <div class="slide-more">
                             <ul class="slide-list">
@@ -62,24 +67,26 @@
                                 </li>
                             </ul>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-            </div>
+            </div> -->
 
             <div id="magic" class="loading pickup">
                 <div id="load">
-                    <div>E</div>
-                    <div>M</div>
-                    <div>O</div>
-                    <div>C</div>
-                    <div>L</div>
+                    <div>G</div>
+                    <div>N</div>
+                    <div>I</div>
+                    <div>D</div>
+                    <div>D</div>
                     <div>E</div>
                     <div>W</div>
-                  </div>
-                <!-- <div class="box">
-                    <img src="static/images/loading.gif" />
-                    <span>You Are Invited...</span>
-                </div> -->
+                </div>
+                <button onclick="myFunction()" class="invitationButton" target="blank">Invitation
+                </button>
+                <div class="box">
+                    <!-- <img src="static/images/loading.gif" />
+                    <span>You Are Invited...</span> -->
+                </div>
             </div>
         </main>
     </div>
@@ -107,9 +114,9 @@
                 .printThis();
         }
 
-        function initPickupPage() {
-
-            var content = $('.main-content');
+        function myFunction(){
+            var image = sessionStorage["image" + 'swrapfy3z1zb'] || 'static/card/card.jpg';
+            show3DInvitation(image, 'invitation_portrait');
             var audio = document.createElement("AUDIO")
             document.body.appendChild(audio);
             audio.src = "static/audio/bg.m4a"
@@ -127,19 +134,56 @@
             document.body.addEventListener("touchmove", function () {
                 audio.play()
             })
-
-            var image = sessionStorage["image" + 'swrapfy3z1zb'] || 'static/card/card.jpg';
-
+            document.addEventListener("visibilitychange", function() {
+                if (document.hidden){
+                    audio.pause()
+                } else {
+                    audio.play()
+                }
+            });
             
-            show3DInvitation(image, 'invitation_portrait');
-
-            //on load scroll page to hide the header
-            $(window).scrollTop(20);
         }
 
-        $(function () {
-            initPickupPage();
-        });
+        // function initPickupPage() {
+
+        //     var content = $('.main-content');
+        //     // var audio = document.createElement("AUDIO")
+        //     // document.body.appendChild(audio);
+        //     // audio.src = "static/audio/bg.m4a"
+        //     // audio.loop = "loop"
+        //     // audio.autoplay="autoplay"
+        //     // document.body.addEventListener("mousemove", function () {
+        //     //     audio.play()
+        //     // })
+        //     // document.body.addEventListener("mouseenter", function () {
+        //     //     audio.play()
+        //     // })
+        //     // document.body.addEventListener("touchstart", function () {
+        //     //     audio.play()
+        //     // })
+        //     // document.body.addEventListener("touchmove", function () {
+        //     //     audio.play()
+        //     // })
+        //     // document.addEventListener("visibilitychange", function() {
+        //     //     if (document.hidden){
+        //     //         audio.pause()
+        //     //     } else {
+        //     //         audio.play()
+        //     //     }
+        //     // });
+
+        //     // var image = sessionStorage["image" + 'swrapfy3z1zb'] || 'static/card/card.jpg';
+
+            
+        //     // show3DInvitation(image, 'invitation_portrait');
+
+        //     //on load scroll page to hide the header
+        //     // $(window).scrollTop(20);
+        // }
+
+        // $(function () {
+        //     initPickupPage();
+        // });
 
     </script>
 

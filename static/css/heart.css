@@ -229,3 +229,37 @@
           opacity:0;
       }
   }
+
+
+
+  .invitationButton{
+	position: relative;
+	width:100px;
+	height:40px;
+	bottom:300px;
+    /* right:600px; */
+    /* top: 50%; */
+    top: 90%;
+	background-color:rgba(204, 31, 0, 0.864);
+	color:#FFF;
+	border-radius:30px;
+	text-align:center;
+}
+
+
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:rgba(0, 204, 153, 0.864);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
