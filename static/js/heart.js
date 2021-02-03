@@ -16,4 +16,4 @@ var love = setInterval(function() {
             $(this).detach();
         }
     });
-}, 500);
+}, 1000);
