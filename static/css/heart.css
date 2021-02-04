@@ -243,9 +243,9 @@
 	background-color:rgba(204, 31, 0, 0.864);
 	color:#FFF;
 	border-radius:30px;
-	text-align:center;
+    text-align:center;
+    z-index: 100000;
 }
-
 
   .float{
 	position:fixed;
@@ -253,6 +253,19 @@
 	height:60px;
 	bottom:40px;
 	right:40px;
+	background-color:rgba(0, 204, 153, 0.864);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.float2{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:120px;
 	background-color:rgba(0, 204, 153, 0.864);
 	color:#FFF;
 	border-radius:50px;
