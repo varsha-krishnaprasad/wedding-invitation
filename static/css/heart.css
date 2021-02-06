@@ -39,8 +39,7 @@
       background: inherit;
       border-radius: 100%;
   }
-
-  .body {background-color: coral;}
+  
   
   @-webkit-keyframes love {
     0%{top:110%}
