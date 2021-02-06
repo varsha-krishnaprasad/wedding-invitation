@@ -57,11 +57,21 @@
 
             <div class="rsvp-fixed _3dhide">
                 <div class="container">
-                    <div class="rsvp-button-wrap">
-                        <a href='https://goo.gl/maps/6qmrHDTd2bs7eD3C7' id="rsvp-button-fixed" target="blank"
-                            class="button -primary -size-sm-md"><i class="fa fa-map-marker"></i> Map</a>
-                    </div>
-            
+                    <table style="width: 100%;">
+<tr>
+    <td><div class="rsvp-button-wrap">
+        <a href='https://goo.gl/maps/6qmrHDTd2bs7eD3C7' id="rsvp-button-fixed" target="blank"
+            class="button -primary -size-sm-md"><i class="fa fa-map-marker"></i> Map</a>
+    </div></td>
+    <td> <div class="rsvp-button-wrap">
+        <a href='https://goo.gl/maps/6qmrHDTd2bs7eD3C7' id="rsvp-button-fixed" target="blank"
+            class="button -primary -size-sm-md"><i class="fa fa-map-marker"></i> Map</a>
+    </div></td>
+</tr>
+
+                    </table>
+                    
+                   
                     <!-- <div class="more-box">
                         <a href="#" class="btn-more"><i class="more"></i></a>
                         <div class="slide-more">
@@ -86,13 +96,14 @@
                     <div>E</div>
                     <div>W</div>
                 </div>
-                <button onclick="myFunction()" class="invitationButton" target="blank">Invitation
+                <button onclick="myFunction()" class="invitationButton" target="blank">INVITATION
                 </button>
                 <div class="box">
                     <!-- <img src="static/images/loading.gif" />
                     <span>You Are Invited...</span> -->
                 </div>
             </div>
+            <audio id="my_audio" src="static/audio/bg.m4a" loop="loop"></audio>
         </main>
     </div>
     <script type="text/javascript">
@@ -111,7 +122,9 @@
     <script src="static/js/gid.js"></script>
     <script src="static/js/heart.js"></script>
     <script type="text/javascript">
-    
+           window.onload = function() {
+            document.getElementById("my_audio").play();
+        }
 
         function printImage() {
             $('<div class=\'print-wrap\'>')
@@ -127,6 +140,9 @@
             audio.src = "static/audio/bg.m4a"
             audio.loop = "loop"
             audio.autoplay="autoplay"
+
+     
+
             document.body.addEventListener("mousemove", function () {
                 audio.play()
             })
@@ -183,6 +199,10 @@
 
         // $(function () {
         //     initPickupPage();
+        // });
+
+        // $(document).ready(function() {
+        //     $("#my_audio").get(0).play();
         // });
 
     </script>

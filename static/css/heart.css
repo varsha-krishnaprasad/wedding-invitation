@@ -68,6 +68,7 @@
     -ms-user-select:none;
     user-select:none;
     cursor:default;
+    font-size: xx-large;
   }
   
   #load div {
@@ -234,16 +235,17 @@
 
   .invitationButton{
 	position: relative;
-	width:100px;
-	height:40px;
-	bottom:300px;
+	width:30%;
+	height:10%;
+	/* bottom:20%; */
     /* right:600px; */
     /* top: 50%; */
-    top: 90%;
-	background-color:rgba(204, 31, 0, 0.864);
+    top: 80%;
+	background-color:rgba(111, 17, 64, 0.898);
 	color:#FFF;
 	border-radius:30px;
     text-align:center;
+    font-size: x-large;
     z-index: 100000;
 }
 
