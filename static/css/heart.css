@@ -39,6 +39,8 @@
       background: inherit;
       border-radius: 100%;
   }
+
+  .body {background-color: coral;}
   
   @-webkit-keyframes love {
     0%{top:110%}
@@ -246,7 +248,12 @@
 	border-radius:30px;
     text-align:center;
     font-size: x-large;
+    
+    font-family: Trattatello, fantasy;
     z-index: 100000;
+
+
+    
 }
 
   .float{
