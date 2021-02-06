@@ -86,7 +86,7 @@
     -o-transform:rotate(180deg);
     -moz-transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
-    color:#f03535;
+    color:#0a1334;
   }
   
   #load div:nth-child(2) {
@@ -242,7 +242,7 @@
     /* right:600px; */
     /* top: 50%; */
     top: 80%;
-	background-color:#ff5587;
+	background-color:#0a1334;
 	color:#FFF;
 	border-radius:30px;
     text-align:center;
@@ -253,36 +253,6 @@
 
 
     
-}
-
-  .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:rgba(0, 204, 153, 0.864);
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-.float2{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:120px;
-	background-color:rgba(0, 204, 153, 0.864);
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-.my-float{
-	margin-top:22px;
 }
 
 
