@@ -236,13 +236,13 @@
 
   .invitationButton{
 	position: relative;
-	width:35%;
+	width:40%;
 	height:10%;
 	/* bottom:20%; */
     /* right:600px; */
     /* top: 50%; */
     top: 80%;
-	background-color:indianred;
+	background-color:#ff5587;
 	color:#FFF;
 	border-radius:30px;
     text-align:center;
@@ -284,3 +284,19 @@
 .my-float{
 	margin-top:22px;
 }
+
+
+.blink {
+    animation: blink 1s steps(3, start) infinite;
+    -webkit-animation: blink 1s steps(3, start) infinite;
+  }
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
