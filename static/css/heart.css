@@ -235,13 +235,13 @@
 
   .invitationButton{
 	position: relative;
-	width:30%;
+	width:35%;
 	height:10%;
 	/* bottom:20%; */
     /* right:600px; */
     /* top: 50%; */
     top: 80%;
-	background-color:rgba(111, 17, 64, 0.898);
+	background-color:indianred;
 	color:#FFF;
 	border-radius:30px;
     text-align:center;
