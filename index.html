@@ -43,19 +43,19 @@
                 <div class="container">
                     <table style="width: 100%; font-family: Bradley Hand, cursive; font-weight: bold;">
                         <tr>
-                            <td style="width: 45%;">
+                            <td style="width: 49%;">
 
                                 <div class="rsvp-button-wrap">
                                     <a href='https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding+-+Krishnaprasad+%26+Varsha&details=Venue%3A%0ADhanya+Party+Hall%2C+Ayodhya+Grand+Hotel%2C+%0AOpp.+BDA+Complex%2C+Outer+Ring+Road%2C+Nagarabhavi%2C+Bangalore&location=https%3A%2F%2Fgoo.gl%2Fmaps%2F6qmrHDTd2bs7eD3C7&dates=20210225T123000%2F20210225T150000'
                                         id="rsvp-button-fixed" target="blank" class="button -primary -size-sm-md"><i
-                                            class="fa fa-calendar-plus-o"></i> Calender</a>
+                                            class="fa fa-calendar-plus-o"></i> <span style="font-size: small;">Calender</span></a>
                                 </div>
                             </td>
-                            <td style="width: 45%;">
+                            <td style="width: 49%;">
                                 <div class="rsvp-button-wrap">
                                     <a href='https://goo.gl/maps/6qmrHDTd2bs7eD3C7' id="rsvp-button-fixed"
-                                        target="blank" class="button -primary -size-sm-md"><i
-                                            class="fa fa-map-marker"></i> Map</a>
+                                        target="blank" class="button -primary -size-sm-md" ><i
+                                            class="fa fa-map-marker"></i> <span style="font-size: small;">Map</span></a>
                                 </div>
                             </td>
                         </tr>
@@ -73,8 +73,8 @@
                     <div style="font-family: Bradley Hand, cursive; font-size: xx-large;font-weight: bold;">e</div>
                     <div style="font-family: Bradley Hand, cursive;font-size: xx-large;font-weight: bold;">W</div>
                 </div>
-                <button onclick="myFunction()" class="invitationButton" target="blank"
-                    style="font-family: Bradley Hand, cursive; font-weight: bold;"><i class="fa fa-hand-o-right blink"
+                <button onclick="myFunction()" class="invitationButton" target="blank" id="invitationButton"
+                    style="font-family: Bradley Hand, cursive; font-weight: bold;"><i class="fa fa-hand-o-right blink" id="invitationIcon"
                         aria-hidden="true"></i> Invitation
                 </button>
                 <div class="box">
@@ -106,6 +106,9 @@
         }
 
         function myFunction() {
+            document.getElementById("invitationIcon").className = "fa fa-spinner fa-spin";
+            // document.getElementById("invitationButton").innerHTML = "loading";
+            
             var image = sessionStorage["image" + 'swrapfy3z1zb'] || 'static/card/card.jpg';
             show3DInvitation(image, 'invitation_portrait');
             var audio = document.createElement("AUDIO")
