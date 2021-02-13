@@ -236,7 +236,10 @@
 
   .invitationButton{
 	position: relative;
-	width:60%;
+  padding-left:4%;
+  padding-right:4%;
+  max-width: 90%;
+	/* width:60%; */
 	height:10%;
 	/* bottom:20%; */
     /* right:600px; */
